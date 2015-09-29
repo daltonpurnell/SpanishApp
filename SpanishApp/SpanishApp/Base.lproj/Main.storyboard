@@ -15,13 +15,59 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video plays here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjD-v6-AlC">
+                                <rect key="frame" x="237" y="289" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mjD-v6-AlC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NJs-c9-XtM"/>
+                            <constraint firstItem="mjD-v6-AlC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TmP-Rs-hQ6"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="jD8-0s-mtc"/>
+                    <navigationItem key="navigationItem" id="jD8-0s-mtc">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="Mcc-Qs-OCV">
+                            <connections>
+                                <segue destination="fWy-kk-UZm" kind="show" id="uG2-aP-ime"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1172" y="-353"/>
+        </scene>
+        <!--Activity1 Exercises Table View Controller-->
+        <scene sceneID="Jm1-N2-Jq3">
+            <objects>
+                <tableViewController id="fWy-kk-UZm" customClass="Activity1ExercisesTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="N3P-6p-ETF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="u4G-Zb-xdb">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u4G-Zb-xdb" id="tAP-LH-N6R">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fWy-kk-UZm" id="paX-RE-pGz"/>
+                            <outlet property="delegate" destination="fWy-kk-UZm" id="uPX-P5-8RP"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4j-rV-E2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="-353"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6X9-ww-pfo">

@@ -15,6 +15,7 @@
 		CF2356A01BBAE7D000FD5B33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF23569E1BBAE7D000FD5B33 /* LaunchScreen.storyboard */; };
 		CF2356AB1BBAE7D000FD5B33 /* SpanishAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2356AA1BBAE7D000FD5B33 /* SpanishAppTests.m */; };
 		CF2356B61BBAE7D000FD5B33 /* SpanishAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2356B51BBAE7D000FD5B33 /* SpanishAppUITests.m */; };
+		CF2356C51BBAEAAE00FD5B33 /* Activity1ExercisesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2356C41BBAEAAE00FD5B33 /* Activity1ExercisesTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		CF2356B11BBAE7D000FD5B33 /* SpanishAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpanishAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2356B51BBAE7D000FD5B33 /* SpanishAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpanishAppUITests.m; sourceTree = "<group>"; };
 		CF2356B71BBAE7D000FD5B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2356C31BBAEAAE00FD5B33 /* Activity1ExercisesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity1ExercisesTableViewController.h; sourceTree = "<group>"; };
+		CF2356C41BBAEAAE00FD5B33 /* Activity1ExercisesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity1ExercisesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				CF2356941BBAE7D000FD5B33 /* AppDelegate.m */,
 				CF2356961BBAE7D000FD5B33 /* ViewController.h */,
 				CF2356971BBAE7D000FD5B33 /* ViewController.m */,
+				CF2356C31BBAEAAE00FD5B33 /* Activity1ExercisesTableViewController.h */,
+				CF2356C41BBAEAAE00FD5B33 /* Activity1ExercisesTableViewController.m */,
 				CF2356991BBAE7D000FD5B33 /* Main.storyboard */,
 				CF23569C1BBAE7D000FD5B33 /* Assets.xcassets */,
 				CF23569E1BBAE7D000FD5B33 /* LaunchScreen.storyboard */,
@@ -272,6 +277,7 @@
 			files = (
 				CF2356981BBAE7D000FD5B33 /* ViewController.m in Sources */,
 				CF2356951BBAE7D000FD5B33 /* AppDelegate.m in Sources */,
+				CF2356C51BBAEAAE00FD5B33 /* Activity1ExercisesTableViewController.m in Sources */,
 				CF2356921BBAE7D000FD5B33 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
