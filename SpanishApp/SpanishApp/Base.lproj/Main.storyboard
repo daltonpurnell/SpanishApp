@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OOS-O4-y7s">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -57,6 +58,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Fml-MP-31b" kind="show" id="NeB-a1-asc"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -68,6 +72,90 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4j-rV-E2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1820" y="-353"/>
+        </scene>
+        <!--Activity1 Exercises Detail View Controller-->
+        <scene sceneID="rPs-V6-R2d">
+            <objects>
+                <viewController id="1DB-7V-Cvw" customClass="Activity1ExercisesDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="74q-7R-jND"/>
+                        <viewControllerLayoutGuide type="bottom" id="vBh-Hb-9Mb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MjY-ES-zse">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaM-ni-Arx">
+                                <rect key="frame" x="20" y="108" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8t-m5-wkE">
+                                <rect key="frame" x="275" y="299" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uec-gs-fMC"/>
+                                    <constraint firstAttribute="width" constant="50" id="wQQ-SL-oAR"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Speaker-100"/>
+                                <connections>
+                                    <action selector="listenButtonTapped:" destination="1DB-7V-Cvw" eventType="touchUpInside" id="rSu-Ru-41b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcM-Nd-Me4">
+                                <rect key="frame" x="275" y="357" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="1tJ-5V-KZR"/>
+                                    <constraint firstAttribute="height" constant="50" id="OBK-vl-tbE"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Microphone-100"/>
+                                <connections>
+                                    <action selector="repeatButtonTapped:" destination="1DB-7V-Cvw" eventType="touchUpInside" id="hJM-dl-yxd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Checkmark-100" translatesAutoresizingMaskIntoConstraints="NO" id="Orl-OQ-XsL">
+                                <rect key="frame" x="275" y="94" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="BUL-BM-3zK"/>
+                                    <constraint firstAttribute="height" constant="50" id="WZW-cq-5Fz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TaM-ni-Arx" firstAttribute="top" secondItem="74q-7R-jND" secondAttribute="bottom" constant="44" id="3ea-52-c8D"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="TaM-ni-Arx" secondAttribute="leading" id="4A8-cX-FUf"/>
+                            <constraint firstItem="WcM-Nd-Me4" firstAttribute="centerY" secondItem="I8t-m5-wkE" secondAttribute="centerY" id="5Ce-s1-NNJ"/>
+                            <constraint firstItem="WcM-Nd-Me4" firstAttribute="top" secondItem="I8t-m5-wkE" secondAttribute="bottom" constant="8" id="A0q-sf-U7e"/>
+                            <constraint firstItem="I8t-m5-wkE" firstAttribute="centerX" secondItem="TaM-ni-Arx" secondAttribute="centerX" id="Fba-z7-2Nj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TaM-ni-Arx" secondAttribute="trailing" id="Gun-lj-uPG"/>
+                            <constraint firstItem="I8t-m5-wkE" firstAttribute="top" secondItem="TaM-ni-Arx" secondAttribute="bottom" constant="170" id="Rdw-AX-uBj"/>
+                            <constraint firstItem="Orl-OQ-XsL" firstAttribute="centerY" secondItem="TaM-ni-Arx" secondAttribute="centerY" id="TCL-ix-djd"/>
+                            <constraint firstItem="Orl-OQ-XsL" firstAttribute="centerX" secondItem="TaM-ni-Arx" secondAttribute="centerX" id="w8s-k1-BzH"/>
+                            <constraint firstItem="WcM-Nd-Me4" firstAttribute="centerX" secondItem="I8t-m5-wkE" secondAttribute="centerX" id="z8j-Q0-B7v"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5Ce-s1-NNJ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="qZA-JF-p8W">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="vmf-eI-oEi">
+                            <connections>
+                                <action selector="nextButtonTapped:" destination="1DB-7V-Cvw" id="HxR-b7-wh6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="checkMark" destination="Orl-OQ-XsL" id="PKA-Ar-QKZ"/>
+                        <outlet property="nextButton" destination="vmf-eI-oEi" id="j2l-fb-k7O"/>
+                        <outlet property="word" destination="TaM-ni-Arx" id="1cY-Ei-bhP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRu-fR-O9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3085" y="-353"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6X9-ww-pfo">
@@ -87,5 +175,28 @@
             </objects>
             <point key="canvasLocation" x="482" y="-353"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xeU-Lf-4Mf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fml-MP-31b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="psN-uX-rPG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1DB-7V-Cvw" kind="relationship" relationship="rootViewController" id="XHj-Yu-cxN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kJR-r9-J02" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2443" y="-354"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Checkmark-100" width="100" height="100"/>
+        <image name="Microphone-100" width="100" height="100"/>
+        <image name="Speaker-100" width="100" height="100"/>
+    </resources>
 </document>

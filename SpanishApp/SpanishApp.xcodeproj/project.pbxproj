@@ -16,6 +16,13 @@
 		CF2356AB1BBAE7D000FD5B33 /* SpanishAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2356AA1BBAE7D000FD5B33 /* SpanishAppTests.m */; };
 		CF2356B61BBAE7D000FD5B33 /* SpanishAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2356B51BBAE7D000FD5B33 /* SpanishAppUITests.m */; };
 		CF2356C51BBAEAAE00FD5B33 /* Activity1ExercisesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2356C41BBAEAAE00FD5B33 /* Activity1ExercisesTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		CF2356C81BBAEDDF00FD5B33 /* Activity1ExercisesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2356C71BBAEDDF00FD5B33 /* Activity1ExercisesDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		CF2356CE1BBAEFF000FD5B33 /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CF2356CA1BBAEFF000FD5B33 /* AcousticModelEnglish.bundle */; settings = {ASSET_TAGS = (); }; };
+		CF2356CF1BBAEFF000FD5B33 /* AcousticModelSpanish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CF2356CB1BBAEFF000FD5B33 /* AcousticModelSpanish.bundle */; settings = {ASSET_TAGS = (); }; };
+		CF2356D01BBAEFF000FD5B33 /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2356CC1BBAEFF000FD5B33 /* OpenEars.framework */; settings = {ASSET_TAGS = (); }; };
+		CF2356D11BBAEFF000FD5B33 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2356CD1BBAEFF000FD5B33 /* Slt.framework */; settings = {ASSET_TAGS = (); }; };
+		CF2356D31BBAF05800FD5B33 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2356D21BBAF05800FD5B33 /* AudioToolbox.framework */; };
+		CF2356D51BBAF05F00FD5B33 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2356D41BBAF05F00FD5B33 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +61,14 @@
 		CF2356B71BBAE7D000FD5B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF2356C31BBAEAAE00FD5B33 /* Activity1ExercisesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity1ExercisesTableViewController.h; sourceTree = "<group>"; };
 		CF2356C41BBAEAAE00FD5B33 /* Activity1ExercisesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity1ExercisesTableViewController.m; sourceTree = "<group>"; };
+		CF2356C61BBAEDDF00FD5B33 /* Activity1ExercisesDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity1ExercisesDetailViewController.h; sourceTree = "<group>"; };
+		CF2356C71BBAEDDF00FD5B33 /* Activity1ExercisesDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity1ExercisesDetailViewController.m; sourceTree = "<group>"; };
+		CF2356CA1BBAEFF000FD5B33 /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		CF2356CB1BBAEFF000FD5B33 /* AcousticModelSpanish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelSpanish.bundle; sourceTree = "<group>"; };
+		CF2356CC1BBAEFF000FD5B33 /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		CF2356CD1BBAEFF000FD5B33 /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		CF2356D21BBAF05800FD5B33 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CF2356D41BBAF05F00FD5B33 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +76,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2356D51BBAF05F00FD5B33 /* AVFoundation.framework in Frameworks */,
+				CF2356D31BBAF05800FD5B33 /* AudioToolbox.framework in Frameworks */,
+				CF2356D11BBAEFF000FD5B33 /* Slt.framework in Frameworks */,
+				CF2356D01BBAEFF000FD5B33 /* OpenEars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +129,8 @@
 				CF2356971BBAE7D000FD5B33 /* ViewController.m */,
 				CF2356C31BBAEAAE00FD5B33 /* Activity1ExercisesTableViewController.h */,
 				CF2356C41BBAEAAE00FD5B33 /* Activity1ExercisesTableViewController.m */,
+				CF2356C61BBAEDDF00FD5B33 /* Activity1ExercisesDetailViewController.h */,
+				CF2356C71BBAEDDF00FD5B33 /* Activity1ExercisesDetailViewController.m */,
 				CF2356991BBAE7D000FD5B33 /* Main.storyboard */,
 				CF23569C1BBAE7D000FD5B33 /* Assets.xcassets */,
 				CF23569E1BBAE7D000FD5B33 /* LaunchScreen.storyboard */,
@@ -122,6 +143,9 @@
 		CF2356901BBAE7D000FD5B33 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CF2356D41BBAF05F00FD5B33 /* AVFoundation.framework */,
+				CF2356D21BBAF05800FD5B33 /* AudioToolbox.framework */,
+				CF2356C91BBAEFF000FD5B33 /* Framework */,
 				CF2356911BBAE7D000FD5B33 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -143,6 +167,17 @@
 				CF2356B71BBAE7D000FD5B33 /* Info.plist */,
 			);
 			path = SpanishAppUITests;
+			sourceTree = "<group>";
+		};
+		CF2356C91BBAEFF000FD5B33 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				CF2356CA1BBAEFF000FD5B33 /* AcousticModelEnglish.bundle */,
+				CF2356CB1BBAEFF000FD5B33 /* AcousticModelSpanish.bundle */,
+				CF2356CC1BBAEFF000FD5B33 /* OpenEars.framework */,
+				CF2356CD1BBAEFF000FD5B33 /* Slt.framework */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF2356A01BBAE7D000FD5B33 /* LaunchScreen.storyboard in Resources */,
+				CF2356CF1BBAEFF000FD5B33 /* AcousticModelSpanish.bundle in Resources */,
+				CF2356CE1BBAEFF000FD5B33 /* AcousticModelEnglish.bundle in Resources */,
 				CF23569D1BBAE7D000FD5B33 /* Assets.xcassets in Resources */,
 				CF23569B1BBAE7D000FD5B33 /* Main.storyboard in Resources */,
 			);
@@ -275,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2356C81BBAEDDF00FD5B33 /* Activity1ExercisesDetailViewController.m in Sources */,
 				CF2356981BBAE7D000FD5B33 /* ViewController.m in Sources */,
 				CF2356951BBAE7D000FD5B33 /* AppDelegate.m in Sources */,
 				CF2356C51BBAEAAE00FD5B33 /* Activity1ExercisesTableViewController.m in Sources */,
@@ -417,6 +455,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpanishApp/Framework",
+				);
 				INFOPLIST_FILE = SpanishApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dalton.SpanishApp;
@@ -428,6 +470,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpanishApp/Framework",
+				);
 				INFOPLIST_FILE = SpanishApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dalton.SpanishApp;
